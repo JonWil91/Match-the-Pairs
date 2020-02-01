@@ -17,3 +17,11 @@ body {
 }
 
 /* /navbar */
+
+
+#card-container .card {
+  height: 200px;
+  width: 150px;
+  border: 1px solid #000;
+  background-color: #eee;
+}
