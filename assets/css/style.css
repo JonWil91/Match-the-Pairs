@@ -1,0 +1,19 @@
+body {
+    background-color: #3119f5;
+}
+
+/* Navbar */
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: red;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* /navbar */
