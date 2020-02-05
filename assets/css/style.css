@@ -19,17 +19,6 @@ body {
 /* /navbar */
 
 
-
-.the-card {
-    height: 200px;
-    width: 150px;
-    background-color: #fafafa;
-    border: 1px solid #000;
-    margin: 20px;
-    border-radius: 20px;
-}
-
-
 /* THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
   position: absolute;
@@ -43,7 +32,7 @@ body {
 }
 
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
-.thecard{
+.card-container{
   position: relative;
   top: 0;
   left: 0;
@@ -56,9 +45,10 @@ body {
 }
 
 /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
-.thecard:hover{
+.card-front.flip {
   transform: rotateY(180deg);
 }
+
 
 /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
  .card-front{
@@ -104,7 +94,14 @@ body {
 
 
 
-
+.the-card {
+    height: 200px;
+    width: 150px;
+    background-color: #fafafa;
+    border: 1px solid #000;
+    margin: 20px;
+    border-radius: 20px;
+}
 
 
 

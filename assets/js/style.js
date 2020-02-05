@@ -1,4 +1,4 @@
-const cards = ['a', 'b', 'c', 'd'];
+  /* const cards = ['a', 'b', 'c', 'd'];
 
 const cardContainer = document.getElementById('card-container');
 
@@ -11,4 +11,13 @@ for (let i = 0; i <= cards.length - 1; i++) {
   cardContainer.appendChild(cardDiv);
 }
 
-console.log(cardContainer);
+console.log(cardContainer); */
+
+
+const cards = document.querySelectorAll(".card-front");
+
+function flipCard() {
+    this.classList.toggle('flip');
+}
+
+cards.forEach(card => card.addEventListener('click', flipCard));
