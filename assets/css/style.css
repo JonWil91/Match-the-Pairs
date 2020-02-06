@@ -18,6 +18,10 @@ body {
 
 /* /navbar */
 
+/* inspiration for flip classes:
+https://www.youtube.com/watch?v=OV8MVmtgmoY&list=LLG4J-2pFnKWP9Fq4tKX-HNA&index=4&t=0s
+https://www.youtube.com/watch?v=IMz_68rfhXA&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw&index=6
+*/
 
 /* THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
@@ -40,15 +44,14 @@ body {
   height: 100%;
   border-radius: 10px;
   transform-style: preserve-3d;
-  transition: all 0.8s ease;
+  transition: all 0.9s ease;
   cursor: pointer;
 }
 
 /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
-.card-front.flip {
+.card-container.flip {
   transform: rotateY(180deg);
 }
-
 
 /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
  .card-front{

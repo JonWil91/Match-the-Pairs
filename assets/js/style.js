@@ -14,7 +14,7 @@ for (let i = 0; i <= cards.length - 1; i++) {
 console.log(cardContainer); */
 
 
-const cards = document.querySelectorAll(".card-front");
+const cards = document.querySelectorAll(".card-container");
 
 function flipCard() {
     this.classList.toggle('flip');
