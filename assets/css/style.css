@@ -29,9 +29,6 @@ https://www.youtube.com/watch?v=IMz_68rfhXA&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty
   width: 250px;
   height: 320px;
   background: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
 }
 
@@ -62,7 +59,6 @@ https://www.youtube.com/watch?v=IMz_68rfhXA&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty
   backface-visibility: hidden;
   overflow: hidden;
   background: #ffc728;
-  color: #000;
 }
 
 /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
@@ -85,7 +81,12 @@ https://www.youtube.com/watch?v=IMz_68rfhXA&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty
 
 
 
-
+#card-containerr .card {
+    height: 200px;
+    width: 150px;
+    border: 1px solid #000;
+    background-color: red;
+}
 
 
 
