@@ -51,7 +51,7 @@ function createStyle() {
 function addPokemonToStyles(a) {
     const body = document.getElementsByTagName('body')[0];
     const style = body.getElementsByTagName('style')[0];
-    style.innerHTML += `.card.${a} { background: url("/assets/images/${a}.png") no-repeat center; background-size: contain; background-color: #fafafa; }\n`;
+    style.innerHTML += `.card.${a} { background: url("/assets/images/${a}.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }\n`;
 }
 
 //https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
