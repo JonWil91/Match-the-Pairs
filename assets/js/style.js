@@ -1,18 +1,24 @@
-const cards = ['a', 'b', 'c', 'd', 'e'];
+const cards = ['a', 'b', 'c', 'd'];
 
 const cardContainer = document.getElementById('card-container');
 
 for (let i = 0; i <= cards.length - 1; i++) {
-  const cardDiv = document.createElement('div');
-  cardDiv.innerText = cards[i];
-  cardDiv.classList.add('card');
-  cardDiv.classList.add('card-back');
-  cardDiv.addEventListener('click', flipCard);
-  cardContainer.appendChild(cardDiv);
+  const card = document.createElement('div');
+  card.classList.add('card');
+  card.classList.add('card-back');
+  
+//   const front = document.createElement('div');
+//   front.classList.add('card-front');
+//   card.appendChild(front);
+//   const back = document.createElement('div');
+//   back.classList.add('card-back');
+//   card.appendChild(back);
+  
+  card.innerText = cards[i];
+  card.addEventListener('click', flipCard);
+  cardContainer.appendChild(card);
 }
 
-// cards.forEach(card => card.addEventListener('click', flipCard));
-
 function flipCard() {
-    this.classList.toggle('flip');
+    this.classList.toggle('front');
 }

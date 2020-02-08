@@ -31,6 +31,10 @@ body {
   background: url("/assets/images/pokeball.png") no-repeat center; 
 }
 
-.card.flip {
-  transform: rotateY(180deg);
+.card.front {
+  background: url("/assets/images/charmander.png") no-repeat center; 
 }
+
+/* .card.flip {
+  transform: rotateY(180deg);
+} */
