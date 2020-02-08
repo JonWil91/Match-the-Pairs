@@ -30,3 +30,7 @@ body {
 .card-back {
   background: url("/assets/images/pokeball.png") no-repeat center; 
 }
+
+.card.flip {
+  transform: rotateY(180deg);
+}
