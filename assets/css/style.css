@@ -16,89 +16,9 @@ body {
     letter-spacing: 1px;
 }
 
-/* /navbar */
+/* Cards */
 
-/* inspiration for flip classes:
-https://www.youtube.com/watch?v=OV8MVmtgmoY&list=LLG4J-2pFnKWP9Fq4tKX-HNA&index=4&t=0s
-https://www.youtube.com/watch?v=IMz_68rfhXA&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw&index=6
-*/
-
-/* THE MAINCONTAINER HOLDS EVERYTHING */
-.maincontainer{
-  position: absolute;
-  width: 250px;
-  height: 320px;
-  background: none;
-
-}
-
-/* THE CARD HOLDS THE FRONT AND BACK FACES */
-.card-container{
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  transform-style: preserve-3d;
-  transition: all 0.9s ease;
-  cursor: pointer;
-}
-
-/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
-.card-container.flip {
-  transform: rotateY(180deg);
-}
-
-/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
- .card-front{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background: #ffc728;
-}
-
-/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
-.card-back{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background: #fafafa;
-  color: #333;
-  text-align: center;
-  transform: rotateY(180deg);
-  background: url("/assets/images/charmander.png") no-repeat center;
-  background-size: contain;
-  background-color: white;
-
-}
-
-
-
-#card-containerr .card {
-    height: 200px;
-    width: 150px;
-    border: 1px solid #000;
-    background-color: red;
-}
-
-
-
-
-
-
-
-
-
-
-
-.the-card {
+.card {
     height: 200px;
     width: 150px;
     background-color: #fafafa;
@@ -107,8 +27,6 @@ https://www.youtube.com/watch?v=IMz_68rfhXA&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty
     border-radius: 20px;
 }
 
-
-
-
-
-
+.card-back {
+  background: url("/assets/images/pokeball.png") no-repeat center; 
+}
