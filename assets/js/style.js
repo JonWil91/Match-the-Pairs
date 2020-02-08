@@ -5,16 +5,7 @@ const cardContainer = document.getElementById('card-container');
 for (let i = 0; i <= cards.length - 1; i++) {
   const card = document.createElement('div');
   card.classList.add('card');
-  card.classList.add('card-back');
-  
-//   const front = document.createElement('div');
-//   front.classList.add('card-front');
-//   card.appendChild(front);
-//   const back = document.createElement('div');
-//   back.classList.add('card-back');
-//   card.appendChild(back);
-  
-  card.innerText = cards[i];
+  card.classList.add('back');
   card.addEventListener('click', flipCard);
   cardContainer.appendChild(card);
 }
