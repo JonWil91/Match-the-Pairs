@@ -39,3 +39,14 @@ body {
     background-size: contain;
     background-color: #fafafa;
 }
+.card.charmander {
+    background: url("/assets/images/charmander.png") no-repeat center; 
+    background-size: contain;
+    background-color: #fafafa;
+}
+
+.card.bulbasaur {
+    background: url("/assets/images/bulbasaur.png") no-repeat center; 
+    background-size: contain;
+    background-color: #fafafa;
+}
