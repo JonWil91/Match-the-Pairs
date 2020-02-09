@@ -9,13 +9,13 @@ const pokemons = [
     'squirtle'
 ];
 
-createStyle();
+createEmptyStyleTags();
 
 let cards = [];
 
 for (let i = 0; i <= pokemons.length - 1; i++) {
     const pokemon = pokemons[i];
-    addPokemonToStyles(pokemon);
+    addPokemonToStyles(pokemon); 
     cards.push(createCard(pokemon));
     cards.push(createCard(pokemon));
 }
@@ -27,9 +27,9 @@ for (let i = 0; i <= cards.length - 1; i++) {
     cardContainer.appendChild(cards[i]);
 }
 
-function createCard(a) {
+function createCard(pokemonName) {
     const card = document.createElement('div');
-    card.id = a;
+    card.id = pokemonName;
     card.classList.add('card');
     card.classList.add('back');
     card.addEventListener('click', flipCard);
@@ -40,28 +40,27 @@ function flipCard() {
     this.classList.toggle(this.id);
 }
 
-function createStyle() {
-    const currentStyle = document.getElementsByTagName('style')[0]
+function createEmptyStyleTags() {
     const body = document.getElementsByTagName('body')[0];
     let style = document.createElement('style');
     style.type = 'text/css';
     body.appendChild(style);
 }
 
-function addPokemonToStyles(a) {
+function addPokemonToStyles(pokemonName) {
     const body = document.getElementsByTagName('body')[0];
     const style = body.getElementsByTagName('style')[0];
-    style.innerHTML += `.card.${a} { background: url("/assets/images/${a}.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }\n`;
+    style.innerHTML += `.card.${pokemonName} { background: url("/assets/images/${pokemonName}.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }\n`;
 }
 
 //https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
-function shuffle(a) {
+function shuffle(pokemonName) {
     var j, x, i;
-    for (i = a.length - 1; i > 0; i--) {
+    for (i = pokemonName.length - 1; i > 0; i--) {
         j = Math.floor(Math.random() * (i + 1));
-        x = a[i];
-        a[i] = a[j];
-        a[j] = x;
+        x = pokemonName[i];
+        pokemonName[i] = pokemonName[j];
+        pokemonName[j] = x;
     }
-    return a;
+    return pokemonName;
 }
