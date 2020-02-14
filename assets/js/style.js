@@ -11,9 +11,11 @@ const pokemons = [
 
 createEmptyStyleTags();
 
+// array of pokemon background images
 let cards = [];
 
-let clickedCards = [];
+// array of clicked cards with a class of open
+let openCards = [];
 
 for (let i = 0; i <= pokemons.length - 1; i++) {
     const pokemon = pokemons[i];
@@ -39,13 +41,9 @@ function createCard(pokemonName) {
 
 function flipCard() {
     this.classList.add('open');
-    clickedCards.push(this.id);
+    openCards.push(this.id);
 
-    const contains = clickedCards.filter(card => {
-        
-    });
-    
-    console.log(clickedCards);
+    console.log(openCards);
 }
 
 function createEmptyStyleTags() {
@@ -71,4 +69,9 @@ function shuffle(pokemonName) {
         pokemonName[j] = x;
     }
     return pokemonName;
+}
+
+//https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates
+function onlyUnique(value, index, self) { 
+  return self.indexOf(value) === index;
 }

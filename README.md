@@ -31,7 +31,7 @@ create for loop to see if card includes an id class, if it does it is not face d
 
 step 1
 
-after every flip, loop through all the cards - consolelog hello to test each flip is working. Should be a total of number of cards
+after every flip, loop through all the cards - consolelog hello to test each flip is working. Should be a total of number of cards - DONE
 
 step 2
 
