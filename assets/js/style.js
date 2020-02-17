@@ -11,12 +11,16 @@ const pokemons = [
 
 createEmptyStyleTags();
 
-// array of pokemon background images
+// array for pokemon background images
 let cards = [];
 
-// array of clicked cards with a class of open
+// array for clicked cards with a class of open
 let openCards = [];
 
+// array for matched cards
+let matchedCards = [];
+
+// add pokemon image to cards, double the number of pokemon images
 for (let i = 0; i <= pokemons.length - 1; i++) {
     const pokemon = pokemons[i];
     addPokemonToStyles(pokemon);
@@ -31,19 +35,72 @@ for (let i = 0; i <= cards.length - 1; i++) {
     cardContainer.appendChild(cards[i]);
 }
 
+// create a div, with the card layout with pokemon name class
 function createCard(pokemonName) {
     const card = document.createElement('div');
     card.id = pokemonName;
     card.classList.add('card');
-    card.addEventListener('click', flipCard);
+    card.classList.add(pokemonName);
+    card.addEventListener('click', clickCard);
     return card
 }
 
-function flipCard() {
+// clicking on a card
+function clickCard() {
+
+    // add open class
     this.classList.add('open');
+
+    // add class to open array
     openCards.push(this.id);
 
-    console.log(openCards);
+    // check if total items in open array is 2
+    if (openCards.length === 2) {
+
+        // get the unique items in this array
+        let unique = openCards.filter(onlyUnique);
+
+        // if total is equal to 1, a match was found, add to matched array.
+        if (unique.length === 1) {
+            matchedCards.push(this.id);
+        }
+
+        // if total matched cards is total cards, reset game by removing all matched cards
+        if (matchedCards.length === cards.length / 2) {
+
+            // game finshed.
+
+            window.setTimeout(() => {
+                matchedCards = [];
+            }, 500);
+        }
+
+        // reset cards, with a short delay
+        window.setTimeout(() => {
+            resetCards();
+        }, 500);
+    }
+}
+
+// this function resets all cards but leaves matched cards turned over
+function resetCards() {
+    // clear out open cards
+    openCards = [];
+
+    // get card elements
+    const cardElements = document.querySelectorAll('.card');
+
+    // remove open class from all cards
+    [].forEach.call(cardElements, function (card) {
+        card.classList.remove("open");
+    });
+
+    matchedCards.forEach(card => {
+        var matchedCardsElements = document.querySelectorAll('.card.' + card);
+        [].forEach.call(matchedCardsElements, function (card) {
+            card.classList.add("open");
+        });
+    });
 }
 
 function createEmptyStyleTags() {
@@ -59,6 +116,11 @@ function addPokemonToStyles(pokemonName) {
     style.innerHTML += `.card#${pokemonName} { background: url("/assets/images/${pokemonName}.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }\n`;
 }
 
+//https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates
+function onlyUnique(value, index, self) {
+    return self.indexOf(value) === index;
+}
+
 //https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
 function shuffle(pokemonName) {
     var j, x, i;
@@ -69,9 +131,4 @@ function shuffle(pokemonName) {
         pokemonName[j] = x;
     }
     return pokemonName;
-}
-
-//https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates
-function onlyUnique(value, index, self) { 
-  return self.indexOf(value) === index;
 }
