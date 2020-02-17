@@ -48,3 +48,16 @@ body {
 .card.open:before {
     display: none;
 }
+
+/* Cards */
+
+.footer {
+    background-color: red;
+    color: #fafafa;
+    position: fixed;
+    bottom: 0;
+}
+
+.ml-auto {
+    float: right;
+}
