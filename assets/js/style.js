@@ -79,7 +79,6 @@ function clickCard() {
                 victory(function() {
                     $(".restart").click(function() {
                         location.reload();
-                        // $(".restart").add(reload())
                     })
                 }); 
                 matchedCards = [];
