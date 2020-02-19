@@ -65,12 +65,18 @@ function clickCard() {
             matchedCards.push(this.id);
         }
 
+        function victory() {
+            document.getElementById('victory-text').classList.add('visible');
+        }
+
         // if total matched cards is total cards, reset game by removing all matched cards
         if (matchedCards.length === cards.length / 2) {
+
 
             // game finshed.
 
             window.setTimeout(() => {
+                victory(); (500); // reload page function//
                 matchedCards = [];
             }, 500);
         }
@@ -132,3 +138,6 @@ function shuffle(pokemonName) {
     }
     return pokemonName;
 }
+
+
+// https://albert-gonzalez.github.io/easytimer.js/
