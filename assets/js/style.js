@@ -76,7 +76,12 @@ function clickCard() {
             // game finshed.
 
             window.setTimeout(() => {
-                victory(); (500); // reload page function//
+                victory(function() {
+                    $(".restart").click(function() {
+                        location.reload();
+                        // $(".restart").add(reload())
+                    })
+                }); 
                 matchedCards = [];
             }, 500);
         }

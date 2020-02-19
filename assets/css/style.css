@@ -53,6 +53,10 @@ body {
 
 /* https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=724s */
 
+#victory-text {
+    background-color: black;
+}
+
 .overlay-text {
   display: none;
   position: fixed;
@@ -77,6 +81,8 @@ body {
   flex-direction: column;
   animation: overlay-grow 500ms forwards;
 }
+
+
 
 /* Footer */
 
