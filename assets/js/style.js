@@ -65,22 +65,16 @@ function clickCard() {
             matchedCards.push(this.id);
         }
 
-        function victory() {
-            document.getElementById('victory-text').classList.add('visible');
-        }
-
         // if total matched cards is total cards, reset game by removing all matched cards
         if (matchedCards.length === cards.length / 2) {
 
-
             // game finshed.
-
             window.setTimeout(() => {
-                victory(function() {
-                    $(".restart").click(function() {
+                victory(function () {
+                    $(".restart").click(function () {
                         location.reload();
                     })
-                }); 
+                });
                 matchedCards = [];
             }, 500);
         }
@@ -90,6 +84,11 @@ function clickCard() {
             resetCards();
         }, 500);
     }
+}
+
+// this function adds a previously hidden div after the game is won
+function victory() {
+    document.getElementById('victory-text').classList.add('visible');
 }
 
 // this function resets all cards but leaves matched cards turned over
