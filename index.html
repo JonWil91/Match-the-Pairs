@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<script src="https://code.jquery.com/jquery-3.4.1.js"
 		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	
 </head>
 
 <body>
@@ -31,19 +32,22 @@
 				<img src="assets/images/pokemon-text.png" class="pokemon-text"></img>
 				<div class="text-box">
 					<p class="intro-paragraph">
-						It's time for a classic game of match the pairs. Match the pokemon
-						pairs as quickly as possible. Enjoy!
+						It's time for a classic game of match the pairs. Click each card to match the pokemon
+						pairs as quickly as possible!
 					</p>
-					<p>0 Minutes 0 Seconds</p>
+					<div id="countdown">
+                    <p>Seconds:</p>
+                    </div>
+					<p>Number of clicks:</p>
+                    <button>Start Game</button>
 				</div>
+				<div><a href="/" class="refresh"><i class="fas fa-redo-alt"></i></a></div>
 			</div>
 			<div class=col-md-9>
-				<!-- /info panel -->
 				<div id="card-container" class="row justify-content-center"></div>
 				<div id="victory-text" class="overlay-text">
 					<p>VICTORY</p>
-					<p>You finished the game in:</p>
-					<span class="overlay-text-small"><a href="/" class="restart">Click to Restart</a></span>
+					<span class="overlay-text-small"><a href="/" class="restart">Click Here to Restart</a></span>
 				</div>
 			</div>
 		</div>

@@ -74,6 +74,7 @@ function clickCard() {
                     $(".restart").click(function () {
                         location.reload();
                     })
+                    clearInterval(interval);
                 });
                 matchedCards = [];
             }, 500);
@@ -90,6 +91,15 @@ function clickCard() {
 function victory() {
     document.getElementById('victory-text').classList.add('visible');
 }
+
+//this function sets a timer
+var seconds = 0;
+
+$("button").click(function () {
+    window.setInterval(function () {
+        $('#countdown').html(`Seconds:  ${seconds++}`);
+    }, 1000);
+});
 
 // this function resets all cards but leaves matched cards turned over
 function resetCards() {
@@ -144,3 +154,9 @@ function shuffle(pokemonName) {
 
 
 // https://albert-gonzalez.github.io/easytimer.js/
+
+
+// https://dillinger.io/
+
+
+

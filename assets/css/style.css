@@ -24,7 +24,7 @@ body {
 }
 
 .sidebar {
-    min-height: 100px;
+    min-height: 100vh;
     background-color: #99a5a5;
 }
 
@@ -38,13 +38,18 @@ body {
     color: #fafafa;
 }
 
+.refresh {
+    width: 15px;
+    height: 15px;
+}
+
 /* Cards */
 
 .card {
     position: relative;
-    height: 170px;
-    width: 130px;
-    border: 1px solid #000;
+    height: 180px;
+    width: 140px;
+    border: 2px solid #000;
     margin: 20px;
     border-radius: 20px;
     cursor: pointer;
@@ -91,6 +96,7 @@ body {
   z-index: 100;
   color: #c71884;
   font-size: 100px;
+  opacity: 0.7;
 }
 
 .overlay-text-small {
@@ -98,13 +104,15 @@ body {
   text-decoration: none;
 }
 
+.restart {
+    text-decoration: none;
+}
+
 .overlay-text.visible {
   display: flex;
   flex-direction: column;
   animation: overlay-grow 500ms forwards;
 }
-
-
 
 /* Footer */
 
