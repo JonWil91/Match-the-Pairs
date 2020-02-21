@@ -9,7 +9,7 @@ const pokemons = [
     'squirtle'
 ];
 
-createEmptyStyleTags();
+// createEmptyStyleTags();
 
 // array for pokemon background images
 let cards = [];
@@ -23,7 +23,7 @@ let matchedCards = [];
 // add pokemon image to cards, double the number of pokemon images
 for (let i = 0; i <= pokemons.length - 1; i++) {
     const pokemon = pokemons[i];
-    addPokemonToStyles(pokemon);
+    // addPokemonToStyles(pokemon);
     cards.push(createCard(pokemon));
     cards.push(createCard(pokemon));
 }
@@ -87,6 +87,8 @@ function clickCard() {
     }
 }
 
+
+
 // this function adds a previously hidden div after the game is won
 function victory() {
     document.getElementById('victory-text').classList.add('visible');
@@ -122,18 +124,18 @@ function resetCards() {
     });
 }
 
-function createEmptyStyleTags() {
-    const body = document.getElementsByTagName('body')[0];
-    let style = document.createElement('style');
-    style.type = 'text/css';
-    body.appendChild(style);
-}
+// function createEmptyStyleTags() {
+//     const body = document.getElementsByTagName('body')[0];
+//     let style = document.createElement('style');
+//     style.type = 'text/css';
+//     body.appendChild(style);
+// }
 
-function addPokemonToStyles(pokemonName) {
-    const body = document.getElementsByTagName('body')[0];
-    const style = body.getElementsByTagName('style')[0];
-    style.innerHTML += `.card#${pokemonName} { background: url("/assets/images/${pokemonName}.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }\n`;
-}
+// function addPokemonToStyles(pokemonName) {
+//     const body = document.getElementsByTagName('body')[0];
+//     const style = body.getElementsByTagName('style')[0];
+//     style.innerHTML += `.card#${pokemonName} { background: url("/assets/images/${pokemonName}.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }\n`;
+// }
 
 //https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates
 function onlyUnique(value, index, self) {

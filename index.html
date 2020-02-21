@@ -14,22 +14,20 @@
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<script src="https://code.jquery.com/jquery-3.4.1.js"
 		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-
 	<!-- navbar -->
 	<nav class="navbar navbar-dark navbar-fixed-top">
 		<a href="index.html" class="navbar-brand">Match the Pairs</a>
 	</nav>
 	<!-- /navbar -->
 
-	<!-- game body -->
 	<div class="container-fluid text-center">
 		<div class="row justify-content-center">
+			<!-- sidebar -->
 			<div class="col-md-12 col-lg-3 sidebar">
-				<img src="assets/images/pokemon-text.png" class="pokemon-text"></img>
+				<img src="assets/images/pokemon-text.png" class="pokemon-text" alt="pokemon title text"></img>
 				<div class="text-box">
 					<p class="intro-paragraph">
 						It's time for a classic game of match the pairs. Click each card to match the pokemon
@@ -42,16 +40,20 @@
 					<div class="my-3"><a href="/" class="refresh"><i class="fas fa-redo-alt"></i></a></div>
 				</div>
 			</div>
+			<!-- /sidebar -->
 			<div class=col-md-9>
+				<!-- game body -->
 				<div id="card-container" class="row justify-content-center"></div>
+				<!-- /game body -->
+				<!-- victory div -->
 				<div id="victory-text" class="overlay-text">
 					<p>VICTORY</p>
 					<span class="overlay-text-small"><a href="/" class="restart">Click Here to Restart</a></span>
+					<!-- victory div -->
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- /game body -->
 
 	<!-- footer -->
 	<div class="container-fluid footer">
@@ -61,9 +63,7 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- /footer -->
 
 	<script src="assets/js/style.js"></script>
-
 </body>

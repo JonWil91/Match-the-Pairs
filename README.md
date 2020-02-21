@@ -14,11 +14,13 @@ The final design of the website follows the original sketches made at the start 
 
 ## User stories:
 
-As a user I want each click of a card to provide a response.
+As a user I would expect to click the Start Game button and the game to then begin.
 
-As a user I want the page to have a clear purpose, and be engaging and dynamic.
+As a user I would expect if a pair of cards did not match they would return to being face down.
 
-As a user I want the cards to be arranged differently each time I use the website to keep the game entertaining.
+As a user I would expect if a pair of cards matched then they would remain face up.
+
+As a user I would expect some form of indication that I had won the game.
 
 ## Features
 

@@ -96,7 +96,7 @@ body {
   z-index: 100;
   color: #c71884;
   font-size: 100px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .overlay-text-small {
@@ -126,3 +126,12 @@ body {
 .ml-auto {
     float: right;
 }
+
+.card#charmander { background: url("/assets/images/charmander.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }
+.card#bulbasaur { background: url("/assets/images/bulbasaur.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }
+.card#pikachu { background: url("/assets/images/pikachu.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }
+.card#crocodile { background: url("/assets/images/crocodile.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }
+.card#eevee { background: url("/assets/images/eevee.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }
+.card#gengar { background: url("/assets/images/gengar.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }
+.card#sandslash { background: url("/assets/images/sandslash.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }
+.card#squirtle { background: url("/assets/images/squirtle.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }
