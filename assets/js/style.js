@@ -20,9 +20,8 @@ let matchedCards = [];
 
 // add pokemon image to cards, double the number of pokemon images
 for (let i = 0; i <= pokemons.length - 1; i++) {
-    const pokemon = pokemons[i];
-    cards.push(createCard(pokemon));
-    cards.push(createCard(pokemon));
+    // const pokemon = pokemons[i];
+    cards.push(createCard(pokemons[i]), createCard(pokemons[i]));
 }
 
 shuffle(cards);
@@ -88,6 +87,7 @@ function clickCard() {
 // this function adds a previously hidden div after the game is won
 function victory() {
     document.getElementById('victory-text').classList.add('visible');
+    $("#victory-time").html(`You finished the game in ${seconds} seconds!`)
     stopTimer();
 }
 
@@ -97,10 +97,10 @@ $("#start-game").click(function () {
     startTimer();
 });
 
+let seconds = 0;
 let timeInterval;
 
 function startTimer() {
-    let seconds = 0;
     timeInterval = window.setInterval(function () {
         $('#countdown').html(`Seconds:  ${seconds++}`);
     }, 1000);
