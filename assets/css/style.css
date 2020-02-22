@@ -76,6 +76,58 @@ body {
     display: none;
 }
 
+/* Pokemon cards */
+
+.card#charmander { 
+    background: url("/assets/images/charmander.png") no-repeat center;
+    background-size: contain;
+    background-color: #fafafa;
+    transform: rotateY(180deg); 
+}
+    
+.card#bulbasaur { background: url("/assets/images/bulbasaur.png") no-repeat center;
+background-size: contain;
+background-color: #fafafa;
+transform: rotateY(180deg); 
+}
+
+.card#pikachu { background: url("/assets/images/pikachu.png") no-repeat center;
+background-size: contain;
+background-color: #fafafa;
+transform: rotateY(180deg);
+}
+
+.card#crocodile { background: url("/assets/images/crocodile.png") no-repeat center;
+background-size: contain;
+background-color: #fafafa;
+transform: rotateY(180deg);
+}
+
+.card#eevee { background: url("/assets/images/eevee.png") no-repeat center;
+background-size: contain;
+background-color: #fafafa;
+transform: rotateY(180deg);
+}
+
+.card#gengar { background: url("/assets/images/gengar.png") no-repeat center;
+background-size: contain;
+background-color: #fafafa;
+transform: rotateY(180deg);
+}
+
+.card#sandslash { background: url("/assets/images/sandslash.png") no-repeat center;
+background-size: contain;
+background-color: #fafafa;
+transform: rotateY(180deg);
+}
+
+.card#squirtle { background: url("/assets/images/squirtle.png") no-repeat center;
+background-size: contain;
+background-color: #fafafa;
+transform: rotateY(180deg);
+}
+
+
 /* Victory text */
 
 /* https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=724s */
@@ -97,6 +149,7 @@ body {
   color: #c71884;
   font-size: 100px;
   opacity: 0.8;
+  text-decoration: none;
 }
 
 .overlay-text-small {
@@ -112,6 +165,7 @@ body {
   display: flex;
   flex-direction: column;
   animation: overlay-grow 500ms forwards;
+  text-decoration: none;
 }
 
 /* Footer */
@@ -127,11 +181,3 @@ body {
     float: right;
 }
 
-.card#charmander { background: url("/assets/images/charmander.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }
-.card#bulbasaur { background: url("/assets/images/bulbasaur.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }
-.card#pikachu { background: url("/assets/images/pikachu.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }
-.card#crocodile { background: url("/assets/images/crocodile.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }
-.card#eevee { background: url("/assets/images/eevee.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }
-.card#gengar { background: url("/assets/images/gengar.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }
-.card#sandslash { background: url("/assets/images/sandslash.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }
-.card#squirtle { background: url("/assets/images/squirtle.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }

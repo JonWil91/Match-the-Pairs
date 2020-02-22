@@ -9,8 +9,6 @@ const pokemons = [
     'squirtle'
 ];
 
-// createEmptyStyleTags();
-
 // array for pokemon background images
 let cards = [];
 
@@ -23,7 +21,6 @@ let matchedCards = [];
 // add pokemon image to cards, double the number of pokemon images
 for (let i = 0; i <= pokemons.length - 1; i++) {
     const pokemon = pokemons[i];
-    // addPokemonToStyles(pokemon);
     cards.push(createCard(pokemon));
     cards.push(createCard(pokemon));
 }
@@ -69,13 +66,14 @@ function clickCard() {
         if (matchedCards.length === cards.length / 2) {
 
             // game finshed.
+            victory(function () {
+                $(".restart").click(function () {
+                    location.reload();
+
+                })
+            });
+
             window.setTimeout(() => {
-                victory(function () {
-                    $(".restart").click(function () {
-                        location.reload();
-                    })
-                    clearInterval(interval);
-                });
                 matchedCards = [];
             }, 500);
         }
@@ -87,21 +85,33 @@ function clickCard() {
     }
 }
 
-
-
 // this function adds a previously hidden div after the game is won
 function victory() {
     document.getElementById('victory-text').classList.add('visible');
+    stopTimer();
 }
 
-//this function sets a timer
-var seconds = 0;
+//this variable sets a timer value
 
-$("button").click(function () {
-    window.setInterval(function () {
+$("#start-game").click(function () {
+    startTimer();
+});
+
+let timeInterval;
+
+function startTimer() {
+    let seconds = 0;
+    timeInterval = window.setInterval(function () {
         $('#countdown').html(`Seconds:  ${seconds++}`);
     }, 1000);
-});
+}
+
+function stopTimer() {
+    clearInterval(timeInterval);
+}
+
+
+
 
 // this function resets all cards but leaves matched cards turned over
 function resetCards() {
@@ -124,19 +134,6 @@ function resetCards() {
     });
 }
 
-// function createEmptyStyleTags() {
-//     const body = document.getElementsByTagName('body')[0];
-//     let style = document.createElement('style');
-//     style.type = 'text/css';
-//     body.appendChild(style);
-// }
-
-// function addPokemonToStyles(pokemonName) {
-//     const body = document.getElementsByTagName('body')[0];
-//     const style = body.getElementsByTagName('style')[0];
-//     style.innerHTML += `.card#${pokemonName} { background: url("/assets/images/${pokemonName}.png") no-repeat center; background-size: contain; background-color: #fafafa; transform: rotateY(180deg); }\n`;
-// }
-
 //https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates
 function onlyUnique(value, index, self) {
     return self.indexOf(value) === index;
@@ -153,12 +150,6 @@ function shuffle(pokemonName) {
     }
     return pokemonName;
 }
-
-
-// https://albert-gonzalez.github.io/easytimer.js/
-
-
-// https://dillinger.io/
 
 
 
