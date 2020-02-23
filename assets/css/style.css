@@ -39,14 +39,9 @@ body {
     color: #fafafa;
 }
 
-.refresh {
-    width: 15px;
-    height: 15px;
-}
-
 #start-game {
     padding: 10px;
-    
+    font-size: 15px;
 }
 
 
@@ -55,7 +50,7 @@ body {
 .card {
     position: relative;
     height: 180px;
-    width: 140px;
+    width: 130px;
     border: 2px solid #000;
     margin: 20px;
     border-radius: 20px;
@@ -175,7 +170,7 @@ a:hover {
 /* Footer */
 
 .footer {
-    background-color: red;
+    background-color: #d41a1a;
     color: #fafafa;
     position: relative;
     bottom: 0;
