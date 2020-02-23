@@ -4,6 +4,8 @@ Milestone Project 2
 
 This website is my second project after the culmination of studying the fundamentals of JavaScript and interactive frontend development including jQuery. 
 
+The website can be found at [Match the Pairs](https://jonwil91.github.io/Match-the-Pairs/).
+
 ## UX
 
 This website was developed in order to allow the user to play a classic game of matching the pairs. I selected a Pokemon theme as the images for my cards, as it allowed me to have images on the front and back of the cards that were linked and it is a nostalgic theme for many.
