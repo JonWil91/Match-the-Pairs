@@ -1,5 +1,6 @@
 body {
     background-color: #3119f5;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Navbar */
@@ -8,7 +9,7 @@ body {
     margin-bottom: 0;
     border: 0;
     width: 100%;
-    background-color: red;
+    background-color: #d41a1a;
 }
 
 .navbar-brand {
@@ -42,6 +43,12 @@ body {
     width: 15px;
     height: 15px;
 }
+
+#start-game {
+    padding: 10px;
+    
+}
+
 
 /* Cards */
 
