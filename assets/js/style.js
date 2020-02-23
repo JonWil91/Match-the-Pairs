@@ -20,7 +20,6 @@ let matchedCards = [];
 
 // add pokemon image to cards, double the number of pokemon images
 for (let i = 0; i <= pokemons.length - 1; i++) {
-    // const pokemon = pokemons[i];
     cards.push(createCard(pokemons[i]), createCard(pokemons[i]));
 }
 
@@ -37,7 +36,7 @@ function createCard(pokemonName) {
     card.id = pokemonName;
     card.classList.add('card');
     card.classList.add(pokemonName);
-    card.addEventListener('click', clickCard);
+    // card.addEventListener('click', clickCard);
     return card
 }
 
@@ -65,14 +64,9 @@ function clickCard() {
         if (matchedCards.length === cards.length / 2) {
 
             // game finshed.
-            victory(function () {
-                $(".restart").click(function () {
-                    location.reload();
-
-                })
-            });
 
             window.setTimeout(() => {
+                victory();
                 matchedCards = [];
             }, 500);
         }
@@ -84,6 +78,8 @@ function clickCard() {
     }
 }
 
+
+
 // this function adds a previously hidden div after the game is won
 function victory() {
     document.getElementById('victory-text').classList.add('visible');
@@ -91,11 +87,20 @@ function victory() {
     stopTimer();
 }
 
-//this variable sets a timer value
+
+// this function starts the timer and allows cards to be clicked after Start Game has been clicked
 
 $("#start-game").click(function () {
     startTimer();
+    let cards = document.querySelectorAll(".card");
+    cards.forEach(card => {
+        card.addEventListener("click", clickCard);
+    });
+
 });
+
+
+
 
 let seconds = 0;
 let timeInterval;

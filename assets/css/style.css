@@ -148,23 +148,21 @@ transform: rotateY(180deg);
   z-index: 100;
   color: #c71884;
   font-size: 100px;
-  text-decoration: none;
-}
-
-.overlay-text-small {
-  font-size: .3em;
-  text-decoration: none;
 }
 
 .restart {
+    color: red;
+}
+
+a:hover {
     text-decoration: none;
+    color: rgb(194, 78, 78);
 }
 
 .overlay-text.visible {
   display: flex;
   flex-direction: column;
   animation: overlay-grow 500ms forwards;
-  text-decoration: none;
 }
 
 /* Footer */
@@ -172,7 +170,7 @@ transform: rotateY(180deg);
 .footer {
     background-color: red;
     color: #fafafa;
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 
