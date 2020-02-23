@@ -8,7 +8,7 @@ This website is my second project after the culmination of studying the fundamen
 
 This website was developed in order to allow the user to play a classic game of matching the pairs. I selected a Pokemon theme as the images for my cards, as it allowed me to have images on the front and back of the cards that were linked and it is a nostalgic theme for many.
 
-[Link to images folder to view wireframe initial sketches](https://github.com/JonWil91/Milestone-project-1/tree/master/images)
+[Link to images folder to view wireframe initial sketch](https://github.com/JonWil91/Match-the-Pairs/tree/master/assets/images)
 
 The final design of the website follows the original sketches made at the start of the development process. It was evident that the design worked well for desktop, and the sidebar feature layout had to be amended approriately for mobile and tablet users.
 
