@@ -44,7 +44,6 @@ body {
     font-size: 15px;
 }
 
-
 /* Cards */
 
 .card {
@@ -55,9 +54,6 @@ body {
     margin: 20px;
     border-radius: 20px;
     cursor: pointer;
-    perspective: 1000px;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
 }
 
 .card:before {
@@ -84,51 +80,42 @@ body {
     background: url("/assets/images/charmander.png") no-repeat center;
     background-size: contain;
     background-color: #fafafa;
-    transform: rotateY(180deg); 
 }
     
 .card#bulbasaur { background: url("/assets/images/bulbasaur.png") no-repeat center;
 background-size: contain;
 background-color: #fafafa;
-transform: rotateY(180deg); 
 }
 
 .card#pikachu { background: url("/assets/images/pikachu.png") no-repeat center;
 background-size: contain;
 background-color: #fafafa;
-transform: rotateY(180deg);
 }
 
 .card#crocodile { background: url("/assets/images/crocodile.png") no-repeat center;
 background-size: contain;
 background-color: #fafafa;
-transform: rotateY(180deg);
 }
 
 .card#eevee { background: url("/assets/images/eevee.png") no-repeat center;
 background-size: contain;
 background-color: #fafafa;
-transform: rotateY(180deg);
 }
 
 .card#gengar { background: url("/assets/images/gengar.png") no-repeat center;
 background-size: contain;
 background-color: #fafafa;
-transform: rotateY(180deg);
 }
 
 .card#sandslash { background: url("/assets/images/sandslash.png") no-repeat center;
 background-size: contain;
 background-color: #fafafa;
-transform: rotateY(180deg);
 }
 
 .card#squirtle { background: url("/assets/images/squirtle.png") no-repeat center;
 background-size: contain;
 background-color: #fafafa;
-transform: rotateY(180deg);
 }
-
 
 /* Victory text */
 
@@ -179,4 +166,3 @@ a:hover {
 .ml-auto {
     float: right;
 }
-
