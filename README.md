@@ -79,7 +79,7 @@ The website has currently been tested across multiple mobile and tablet devices,
 * Safari
 * Chrome
 * Firefox
-* Opera
+* Microsoft Edge
 
 ## Credits
 

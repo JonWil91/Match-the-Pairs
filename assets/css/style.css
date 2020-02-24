@@ -37,11 +37,15 @@ body {
     padding: 20px;
     background-color: purple;
     color: #fafafa;
+    -webkit-appearance: none;
 }
 
 #start-game {
-    padding: 10px;
+    padding: 5px;
     font-size: 15px;
+    color: #fafafa;
+    border-radius: 15px;
+    background-color: #f54848ba;
 }
 
 /* Cards */
@@ -65,7 +69,7 @@ body {
     top: 0;
     left: 0;
     border-radius: 20px;
-    background: url("/assets/images/pokeball.png") no-repeat center; 
+    background: url("../images/pokeball.png") no-repeat center; 
     background-size: contain;
     background-color: orange;
 }
@@ -77,42 +81,42 @@ body {
 /* Pokemon cards */
 
 .card#charmander { 
-    background: url("/assets/images/charmander.png") no-repeat center;
+    background: url("../images/charmander.png") no-repeat center;
     background-size: contain;
     background-color: #fafafa;
 }
     
-.card#bulbasaur { background: url("/assets/images/bulbasaur.png") no-repeat center;
+.card#bulbasaur { background: url("../images/bulbasaur.png") no-repeat center;
 background-size: contain;
 background-color: #fafafa;
 }
 
-.card#pikachu { background: url("/assets/images/pikachu.png") no-repeat center;
+.card#pikachu { background: url("../images/pikachu.png") no-repeat center;
 background-size: contain;
 background-color: #fafafa;
 }
 
-.card#crocodile { background: url("/assets/images/crocodile.png") no-repeat center;
+.card#crocodile { background: url("../images/crocodile.png") no-repeat center;
 background-size: contain;
 background-color: #fafafa;
 }
 
-.card#eevee { background: url("/assets/images/eevee.png") no-repeat center;
+.card#eevee { background: url("../images/eevee.png") no-repeat center;
 background-size: contain;
 background-color: #fafafa;
 }
 
-.card#gengar { background: url("/assets/images/gengar.png") no-repeat center;
+.card#gengar { background: url("../images/gengar.png") no-repeat center;
 background-size: contain;
 background-color: #fafafa;
 }
 
-.card#sandslash { background: url("/assets/images/sandslash.png") no-repeat center;
+.card#sandslash { background: url("../images/sandslash.png") no-repeat center;
 background-size: contain;
 background-color: #fafafa;
 }
 
-.card#squirtle { background: url("/assets/images/squirtle.png") no-repeat center;
+.card#squirtle { background: url("../images/squirtle.png") no-repeat center;
 background-size: contain;
 background-color: #fafafa;
 }
@@ -136,7 +140,7 @@ background-color: #fafafa;
   align-items: center;
   z-index: 100;
   color: #c71884;
-  font-size: 100px;
+  font-size: 60px;
 }
 
 .restart {

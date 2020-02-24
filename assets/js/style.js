@@ -78,15 +78,12 @@ function clickCard() {
     }
 }
 
-
-
 // this function adds a previously hidden div after the game is won
 function victory() {
     document.getElementById('victory-text').classList.add('visible');
     $("#victory-time").html(`You finished the game in ${seconds} seconds!`)
     stopTimer();
 }
-
 
 // this function starts the timer and allows cards to be clicked after Start Game has been clicked
 
@@ -98,9 +95,6 @@ $("#start-game").click(function () {
     });
 
 });
-
-
-
 
 let seconds = 0;
 let timeInterval;
@@ -114,9 +108,6 @@ function startTimer() {
 function stopTimer() {
     clearInterval(timeInterval);
 }
-
-
-
 
 // this function resets all cards but leaves matched cards turned over
 function resetCards() {
