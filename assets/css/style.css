@@ -169,3 +169,17 @@ a:hover {
 .ml-auto {
     float: right;
 }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    height: 110px;
+    width: 80px;
+    margin: 5px;
+    padding: 0;
+    }
+  #card-container {
+      height: 100vh;
+      padding: 10px;
+
+  }
+}
