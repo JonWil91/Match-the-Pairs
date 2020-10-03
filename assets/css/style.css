@@ -170,22 +170,22 @@ a:hover {
     float: right;
 }
 
+audio {
+    width: 100%;
+}
+
+
 @media only screen and (max-width: 600px) {
   .card {
     height: 110px;
-    width: 80px;
+    width: 77px;
     margin: 5px;
     padding: 0;
     }
   #card-container {
       height: 100vh;
       padding: 10px;
-
   }
-}
-
-audio {
-    width: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
