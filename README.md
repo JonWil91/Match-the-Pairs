@@ -4,7 +4,7 @@ Milestone Project 2
 
 This website is my second project after the culmination of studying the fundamentals of JavaScript and interactive frontend development including jQuery. 
 
-The website can be found at [Match the Pairs](https://jonwil91.github.io/milestone-2/).
+The website can be found at [Match the Pairs](https://jonwil91.github.io/Match-the-Pairs/).
 
 ## UX
 
